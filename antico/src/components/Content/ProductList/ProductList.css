@@ -1,0 +1,15 @@
+.product-list {
+  display: flex;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
