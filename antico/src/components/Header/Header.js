@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="header">
 
-      <a href="#" className='logo'>Antico</a>
+      <a href="/" className='logo'>Antico</a>
       <div className="header-right">
       <Link to="/addpost" className="header-button-link">
           <button className="header-button">Dodaj ogłoszenie</button>

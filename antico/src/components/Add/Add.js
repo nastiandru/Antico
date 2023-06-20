@@ -1,9 +1,8 @@
 import React, { Fragment, useState, useContext } from "react";
 import "./Add.css";
-import Header from "../Header/Header";
-import { useHistory } from "react-router";
 
 const Add = () => {
+
   let [name, setName] = useState("");
   let [category, setCategory] = useState("");
   let [price, setPrice] = useState("");
@@ -12,10 +11,10 @@ const Add = () => {
   let [loading,setLoading]=useState(false);
   return (
     <Fragment>
-      <Header />
     { loading  }
       <div className="centerDiv">
-        <label>Name</label>
+      <p> Dodaj ogłoszenie</p>
+        <label>Tytuł</label>
         <br />
         <input
           className="input"
@@ -27,23 +26,24 @@ const Add = () => {
           }}
         />
         <br />
-        <label>Category:</label>
+        <label>Kategoria:</label>
         <select
           name="Category"
           onChange={(e) => {
             setCategory(e.target.value);
           }}
           className="input"
-        > <option >Select Category</option>
-          <option value="Cars">Cars</option>
-          <option value="Cameras & Lenses">Cameras & Lenses</option>
-          <option value="Computers & Laptops">Computers & Laptops</option>
-          <option value="Mobile Phones">Mobile Phones</option>
-          <option value="Motorcycles">Motorcycles</option>
-          <option value="Tablets">Tablets</option>
+        > <option >Wybierz kategorie</option>
+          <option value="painting">Malarstwo</option>
+          <option value="jewelry">Biżuteria</option>
+          <option value="furniture">Meble</option>
+          <option value="lamps">Lampy</option>
+          <option value="porcelain&ceramics">Porcelana i ceramika</option>
+          <option value="literature">Literatura</option>
+          <option value="other">Pozostałe</option>
         </select>
         <br />
-        <label>Price</label>
+        <label>Cena</label>
         <br />
         <input
           className="input"
@@ -55,7 +55,7 @@ const Add = () => {
           }}
         />
         <br />
-        <label>Description</label>
+        <label>Opis</label>
         <br />
         <input
           className="input"
@@ -85,7 +85,7 @@ const Add = () => {
         />
         <br />
         <button className="uploadBtn" >
-          upload and Submit
+          Dodaj ogłoszenie
         </button>
       </div> 
     </Fragment>
