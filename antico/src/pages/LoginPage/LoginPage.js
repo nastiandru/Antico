@@ -13,8 +13,9 @@ function LoginPage() {
 
   return (<>
     {loading}
-    <div>
+    <div className="login-container" >
       <div className="boxlogin">
+      <Link to="/signup">Signup</Link>
         <form onSubmit>
         <button>Kontynuj przez Facebooka</button>
         <button>Kontynuj przez konto Google</button>
@@ -44,7 +45,6 @@ function LoginPage() {
           <br />
           <button>Login</button>
         </form>
-        <Link to="/signup">Signup</Link>
       </div> 
     </div>
     </>

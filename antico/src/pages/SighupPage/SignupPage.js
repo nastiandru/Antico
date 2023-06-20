@@ -16,6 +16,7 @@ function LoginPage() {
     {loading}
     <div>
       <div className="boxsignup">
+      <Link to="/login">Login</Link>
         <form onSubmit>
         <button>Kontynuj przez Facebooka</button>
         <button>Kontynuj przez konto Google</button>
@@ -72,9 +73,8 @@ function LoginPage() {
           />
           <br />
           <br />
-          <button>Signup</button>
+          <button>Zarejestruj się</button>
         </form>
-        <Link to="/login">Login</Link>
       </div> 
     </div>
     </>
