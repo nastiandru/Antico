@@ -1,15 +1,15 @@
 .product-list {
+  width: 75%;
+  padding: 16px;
   display: flex;
-}
-
-.sidebar {
-  width: 25%;
-  padding: 20px;
-  background-color: #f1f1f1;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
 }
 
 .main-content {
-  flex-grow: 1;
-  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px; /* Додано зазор між продуктами */
 }
 
