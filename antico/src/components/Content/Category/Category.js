@@ -12,9 +12,11 @@ function Category() {
     
     <ul className='category-list'>
         {categories.map((category, index) => (
+          <div className ='category'>
           <li key={index}>
             <Link to={`/${category}`}>{category}</Link>
           </li>
+          </div>
         ))}
     </ul>
    
