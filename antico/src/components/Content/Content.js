@@ -12,8 +12,7 @@ function Content() {
     { id: 3, name: ' odjdj drorgo r',  price: 400, image: 'img/produkt3.jpg' },
     { id: 4, name: 'drjt idrj dj',  price: 120, image: 'img/produkt4.jpg' },
     { id: 5, name: 'drj idr drkj r',  price: 250, image: 'img/produkt5.jpg' },
-    { id: 6, name: 'lsdkfj idr drkj r',  price: 550, image: 'img/produkt5.jpg' },
-    { id: 7, name: '98udr drkj r',  price: 150, image: 'img/produkt4.jpg' }
+    
   ];
 
   return (

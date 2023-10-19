@@ -6,6 +6,8 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import SignupPage from './pages/SighupPage/SignupPage'
 import AddPage from './pages/AddPage/AddPage'
 import AccountPage from './pages/AccountPage/AccountPage'
+import ProfileInformationPage from './pages/ProfileInformationPage/ProfileInformationPage';
+import ViewPage from './pages/ViewPage/ViewPage';
 
 const App = () => {
   return (
@@ -23,7 +25,8 @@ const App = () => {
           <Route path="/signup" element={<SignupPage/>} />
           <Route path="/addpost" element={<AddPage/>} />
           <Route path="/account" element={<AccountPage/>} />
-          {/* Додайте інші шляхи для сторінок */}
+          <Route path="/view" element={<ViewPage/>} />
+          <Route path="/profileinformation" element={<ProfileInformationPage/>} />
         </Routes>
       </div>
     </Router>
