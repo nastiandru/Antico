@@ -1,17 +1,8 @@
-import React, {useState} from 'react';
-import { useParams} from 'react-router-dom';
+import React from 'react';
 import Product from '../Product/Product';
 import './ProductList.css';
 
-function ProductList({products}) {
-  // const {categoryName} = useParams();
-  // const[products, setProducts] = useState([]);
-
-  // fetch(`/api/products?category=${categoryName}`)
-    //   .then(response => response.json())
-    //   .then(data => setProductList(data));
-
-
+function ProductList({ products }) {
   return (
     <div className="product-list">
       <div className="main-content">
@@ -24,3 +15,9 @@ function ProductList({products}) {
 }
 
 export default ProductList;
+// const {categoryName} = useParams();
+  // const[products, setProducts] = useState([]);
+
+  // fetch(`/api/products?category=${categoryName}`)
+    //   .then(response => response.json())
+    //   .then(data => setProductList(data));

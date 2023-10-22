@@ -1,16 +1,8 @@
 import React from 'react';
 import ProductList from '../Content/ProductList/ProductList';
- import './Account.css';
+import './Account.css';
+import products from '../../products';
 
- const products = [
-  { id: 1, name: 'dfkfdj dkfj kdjfg',  price: 30 , image: 'img/produkt1.jpg' },
-  { id: 2, name: 'dkrj kdjr ijr',  price: 80, image: 'img/produkt2.webp' },
-  { id: 3, name: ' odjdj drorgo r',  price: 400, image: 'img/produkt3.jpg' },
-  { id: 4, name: 'drjt idrj dj',  price: 120, image: 'img/produkt4.jpg' },
-  { id: 5, name: 'drj idr drkj r',  price: 250, image: 'img/produkt5.jpg' },
-  { id: 6, name: 'drj idrwefw drkj r',  price: 650, image: 'img/produkt5.jpg' }
-];
- 
 
 function Account() {
   return (
@@ -33,19 +25,19 @@ function Account() {
           <h2>Doświadczenie z antykami:</h2>
           <p></p>
         </div>
-        </div>
-        <div className="orders">
+      </div>
+      <div className="orders">
         <div className="buttons">
-            <button className="account-button">Moje Ogłoszenia</button>
-            <button className="account-button">Mój Koszyk</button>
-            <button className="account-button selected">Wybrane</button>
-          </div>
-          <div className="productlist-wrapper">
-        <ProductList products={products} />
-      </div>
+          <button className="account-button">Moje Ogłoszenia</button>
+          <button className="account-button">Mój Koszyk</button>
+          <button className="account-button selected">Wybrane</button>
+        </div>
+        <div className="productlist-wrapper">
+          <ProductList products={products} />
         </div>
       </div>
-    
+    </div>
+
   );
 }
 
