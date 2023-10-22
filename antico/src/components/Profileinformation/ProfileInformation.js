@@ -25,32 +25,32 @@ function ProfileInformation() {
       <div className="profileinformation">
         <h2>Wypełnij swój profil</h2>
         <form onSubmit={handleSubmit}>
-
+        <br />
           <label>
             Zdjęcie profilowe:
             <input type="file" accept="image/*" onChange={handleImageUpload} />
           </label>
-
+          <br />
           <label>
             Nazwa użytkownika:
             <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
           </label>
-
+          <br />
           <label>
             Lokalizacja:
             <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
           </label>
-
+          <br />
           <label>
             Numer telefonu:
             <input type="tel" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
           </label>
-
+          <br />
           <label>
             Adres e-mail:
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           </label>
-
+          
           <br />
           <label>Doświadczenie z antykami:</label>
           <select
@@ -67,7 +67,7 @@ function ProfileInformation() {
           </select>
           <br />
 
-          <button type="submit" className="accountBtn">Moje Ogłoszenia</button>
+          <button type="submit" className="accountBtn">Edytuj</button>
         </form>
       </div>
     </Fragment>
