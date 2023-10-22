@@ -1,19 +1,20 @@
 import React, { Fragment, useState, useContext } from "react";
 import "./Add.css";
 
-const Add = () => {
+function Add() {
 
-  let [name, setName] = useState("");
-  let [category, setCategory] = useState("");
-  let [price, setPrice] = useState("");
-  let [description, setDescription] = useState("");
-  let [image, setImage] = useState();
-  let [loading,setLoading]=useState(false);
+  const [name, setName] = useState("");
+  const [category, setCategory] = useState("");
+  const [price, setPrice] = useState("");
+  const [description, setDescription] = useState("");
+  const [image, setImage] = useState();
+  const [loading, setLoading] = useState(false);
+
   return (
     <Fragment>
-    { loading  }
+      {loading}
       <div className="centerDiv">
-      <p> Dodaj ogłoszenie</p>
+        <p> Dodaj ogłoszenie</p>
         <label>Tytuł</label>
         <br />
         <input
@@ -87,7 +88,7 @@ const Add = () => {
         <button className="uploadBtn" >
           Dodaj ogłoszenie
         </button>
-      </div> 
+      </div>
     </Fragment>
   );
 };

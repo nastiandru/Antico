@@ -1,19 +1,17 @@
 .product-card {
   background-color: white;
-    width: 222px;
-    height: 230px;
-    padding: 20px;
-    margin-right: 7px;
-    margin-bottom: 10px;
-    
-  }
-  
-  .product-image {
-    width: 160px;
-    height: 100px;
-    object-fit: cover;
-   
-    
-  }
+  width: 222px;
+  height: 230px;
+  padding: 20px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+
+}
+
+.product-image {
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+}
   
   
