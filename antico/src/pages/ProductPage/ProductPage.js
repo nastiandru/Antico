@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useParams } from 'react-router-dom';
-import products from '../../products'; 
+import products from '../../products';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 function ProductPage() {
   const { productId } = useParams();
@@ -11,12 +13,17 @@ function ProductPage() {
   }
 
   return (
-    <div>
-      <h2>Szczegóły produktu</h2>
-      <p>Nazwa: {productDetails.name}</p>
-      <p>Cena: {productDetails.price} zł</p>
-    </div>
+    <Fragment>
+      <Header />
+      <div>
+        <h2>Szczegóły produktu</h2>
+        <p>Nazwa: {productDetails.name}</p>
+        <p>Cena: {productDetails.price} zł</p>
+      </div>
+      <Footer />
+    </Fragment>
   );
+
 }
 
 export default ProductPage;

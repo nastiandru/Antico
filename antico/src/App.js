@@ -7,7 +7,7 @@ import SignupPage from './pages/SighupPage/SignupPage'
 import AddPage from './pages/AddPage/AddPage'
 import AccountPage from './pages/AccountPage/AccountPage'
 import ProfileInformationPage from './pages/ProfileInformationPage/ProfileInformationPage';
-import ViewPage from './pages/ViewPage/ViewPage';
+import ProductPage from './pages/ProductPage/ProductPage';
 
 const App = () => {
   return (
@@ -25,8 +25,8 @@ const App = () => {
           <Route path="/signup" element={<SignupPage/>} />
           <Route path="/addpost" element={<AddPage/>} />
           <Route path="/account" element={<AccountPage/>} />
-          <Route path="/view" element={<ViewPage/>} />
           <Route path="/profileinformation" element={<ProfileInformationPage/>} />
+          <Route path='/product/:id' element={<ProductPage/>}/>
         </Routes>
       </div>
     </Router>
