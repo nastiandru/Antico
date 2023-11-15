@@ -1,21 +1,91 @@
 .centerDiv {
   position: absolute;
-  width: 1300px;
+  width: 1350px;
   height: 800px;
-  left: 248px;
+  left: 298px;
   top: 175px;
 
   background: #F6F6F6;
 }
-
-.input {
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  outline-color: transparent;
-  margin-bottom: 35px;
-  background-color: transparent;
+.centerDiv p{
+  font-size: 25px;
+  font-weight: 500;
 }
+
+
+
+.title{
+  position: absolute;
+  width: 1200px;
+  height: 60px;
+  left: 50px;
+  top: 65px;
+  border-style: solid;
+  background: #Fff;
+  border-color: #d9d9d9;
+  border-width: 2px;
+}
+
+.description{
+  position: absolute;
+  width: 1200px;
+  height: 140px;
+  left: 50px;
+  top: 130px;
+  border-style: solid;
+  background: #Fff;
+  border-color: #d9d9d9;
+  border-width: 2px;
+}
+.location{
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  left: 750px;
+  top: 320px;
+  border-style: solid;
+  background: #Fff;
+  border-color: #d9d9d9;
+  border-width: 2px;
+}
+
+.categories{
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  left: 750px;
+  top: 400px;
+  border-style: solid;
+  background: #Fff;
+  border-color: #d9d9d9;
+  border-width: 2px;
+
+}
+
+.price{
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  left: 750px;
+  top: 520px;
+  border-style: solid;
+  background: #Fff;
+  border-color: #d9d9d9;
+  border-width: 2px;
+}
+
+.posts{
+  position: absolute;
+  width: 630px;
+  height: 300px;
+  left: 50px;
+  top: 320px;
+  border-style: solid;
+  background: #Fff;
+  border-color: #d9d9d9;
+  border-width: 2px;
+}
+
 
 .uploadBtn {
   background-color: #E5A935;
@@ -35,5 +105,10 @@
 }
 
 .centerDiv label {
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.centerDiv input[type=text]:focus {
+  border: 3px solid #555;
+  font-weight: 500;
 }

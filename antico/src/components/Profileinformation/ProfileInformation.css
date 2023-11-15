@@ -9,12 +9,9 @@
 }
 
 input {
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  outline-color: transparent;
-  margin-bottom: 35px;
-  background-color: transparent;
+  
+  margin-left: 35px;
+  
 }
 
 

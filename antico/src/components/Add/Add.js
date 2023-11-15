@@ -5,6 +5,7 @@ function Add() {
 
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
+  const [location, setLocation] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState();
@@ -15,8 +16,9 @@ function Add() {
       {loading}
       <div className="centerDiv">
         <p> Dodaj ogłoszenie</p>
+
+        <div className="title">
         <label>Tytuł</label>
-        <br />
         <input
           className="input"
           type="text"
@@ -26,38 +28,10 @@ function Add() {
             setName(e.target.value);
           }}
         />
-        <br />
-        <label>Kategoria:</label>
-        <select
-          name="Category"
-          onChange={(e) => {
-            setCategory(e.target.value);
-          }}
-          className="input"
-        > <option >Wybierz kategorie</option>
-          <option value="painting">Malarstwo</option>
-          <option value="jewelry">Biżuteria</option>
-          <option value="furniture">Meble</option>
-          <option value="lamps">Lampy</option>
-          <option value="porcelain&ceramics">Porcelana i ceramika</option>
-          <option value="literature">Literatura</option>
-          <option value="other">Pozostałe</option>
-        </select>
-        <br />
-        <label>Cena</label>
-        <br />
-        <input
-          className="input"
-          type="number"
-          name="Price"
-          value={price}
-          onChange={(e) => {
-            setPrice(e.target.value);
-          }}
-        />
-        <br />
+        </div>
+
+        <div className="description">
         <label>Opis</label>
-        <br />
         <input
           className="input"
           type="text"
@@ -67,9 +41,56 @@ function Add() {
             setDescription(e.target.value);
           }}
         />
+        </div>
+
+        <div className="location">
+        <label>Lokalizacja</label>
+        <input
+          className="input"
+          type="text"
+          name="Location"
+          value={location}
+          onChange={(e) => {
+            setLocation(e.target.value);
+          }}
+        />
+        </div>
+
+        <div className="categories">
+        <label>Kategoria</label>
+        <select
+        className="input"
+          name="Category"
+          onChange={(e) => {
+            setCategory(e.target.value);
+          }}
+          
+        > <option >Wybierz kategorie</option>
+          <option value="painting">Malarstwo</option>
+          <option value="jewelry">Biżuteria</option>
+          <option value="furniture">Meble</option>
+          <option value="lamps">Lampy</option>
+          <option value="porcelain&ceramics">Porcelana i ceramika</option>
+          <option value="literature">Literatura</option>
+          <option value="other">Pozostałe</option>
+        </select>
+        </div>
         <br />
 
-        <br />
+        <div className="price">
+        <label>Cena</label>
+        <input
+          className="input"
+          type="number"
+          name="Price"
+          value={price}
+          onChange={(e) => {
+            setPrice(e.target.value);
+          }}
+        />
+         </div>
+
+        <div className="posts">
         <img
           alt="Posts"
           width="200px"
@@ -88,6 +109,7 @@ function Add() {
         <button className="uploadBtn" >
           Dodaj ogłoszenie
         </button>
+        </div>
       </div>
     </Fragment>
   );
