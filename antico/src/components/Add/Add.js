@@ -8,7 +8,7 @@ function Add() {
   const [location, setLocation] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
-  const [image, setImage] = useState();
+  const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
 
   return (
@@ -90,19 +90,21 @@ function Add() {
         />
          </div>
 
-        <div className="posts">
-        <img
-          alt="Posts"
-          width="200px"
-          height="200px"
-          src={image ? URL.createObjectURL(image) : ""}
-        ></img>
-
-        <br />
+         <div className="posts">
+  {images.map((img, index) => (
+    <img
+      key={index}
+      alt={`Post ${index}`}
+      width="200px"
+      height="200px"
+      src={URL.createObjectURL(img)}
+    />
+  ))}
+  <br />
         <input
           type="file"
           onChange={(e) => {
-            setImage(e.target.files[0]);
+            setImages([...images, e.target.files[0]]);
           }}
         />
         <br />
