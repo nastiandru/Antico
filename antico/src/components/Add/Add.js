@@ -32,9 +32,9 @@ function Add() {
 
         <div className="description">
         <label>Opis</label>
-        <input
+        <textarea
           className="input"
-          type="text"
+          type="textarea"
           name="Description"
           value={description}
           onChange={(e) => {

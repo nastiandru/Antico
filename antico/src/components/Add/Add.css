@@ -17,77 +17,82 @@
 .title{
   position: absolute;
   width: 1200px;
-  height: 60px;
+  height: 65px;
   left: 50px;
   top: 65px;
   border-style: solid;
   background: #Fff;
   border-color: #d9d9d9;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .description{
   position: absolute;
   width: 1200px;
-  height: 140px;
+  height: 150px;
   left: 50px;
   top: 130px;
   border-style: solid;
   background: #Fff;
   border-color: #d9d9d9;
-  border-width: 2px;
+  border-width: 1px;
 }
 .location{
   position: absolute;
-  width: 500px;
-  height: 60px;
-  left: 750px;
+  width: 550px;
+  height: 70px;
+  left: 700px;
   top: 320px;
   border-style: solid;
   background: #Fff;
   border-color: #d9d9d9;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .categories{
   position: absolute;
-  width: 500px;
-  height: 60px;
-  left: 750px;
-  top: 400px;
+  width: 550px;
+  height: 70px;
+  left: 700px;
+  top: 420px;
   border-style: solid;
   background: #Fff;
   border-color: #d9d9d9;
-  border-width: 2px;
+  border-width: 1px;
 
 }
 
 .price{
   position: absolute;
-  width: 500px;
-  height: 60px;
-  left: 750px;
-  top: 520px;
+  width: 550px;
+  height: 70px;
+  left: 700px;
+  top: 530px;
   border-style: solid;
   background: #Fff;
   border-color: #d9d9d9;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .posts{
   position: absolute;
-  width: 630px;
-  height: 300px;
+  width: 600px;
+  height: 390px;
   left: 50px;
   top: 320px;
   border-style: solid;
   background: #Fff;
   border-color: #d9d9d9;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 
 .uploadBtn {
+  position: absolute;
+  width: 400px;
+  height: 70px;
+  left: 725px;
+  top: 315px;
   background-color: #E5A935;
   color: #fff;
   padding: 15px;
@@ -106,9 +111,10 @@
 
 .centerDiv label {
   font-weight: 500;
+  
 }
 
 .centerDiv input[type=text]:focus {
-  border: 3px solid #555;
+ 
   font-weight: 500;
 }
